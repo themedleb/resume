@@ -1,2 +1,2 @@
-# resume
-Mohamed Lebsir's resume
+# Resume
+Mohamed Lebsir's resume.
