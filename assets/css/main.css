@@ -61,4 +61,17 @@ body {
 .education, .experience, .skills, .languages, .certification {
     width: 50%;
     padding: 20px;
+    text-align: left;
+}
+
+.title {
+    font-family: var(--titles);
+    font-weight: 400;
+    color: #23b6db;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
 }
