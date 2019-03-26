@@ -1,10 +1,13 @@
-body {
-  background: #f2f3f7;
-  padding: 75px 0;
-  margin: 0;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-.container {
+body {
+  background: #f2f3f7;
+  padding: 20px 0 20px 0;
+  }
+
+  .container {
   width: 794px;
   height: 1122px;
   background: white;
@@ -13,9 +16,34 @@ body {
   text-align: center;
   border-radius: 20px;
   padding: 20px;
+  }
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.portrait {
+.left {
+  background: red;
+  width: 100%;
+}
+
+.right {
+  background: green;
+  width: 100%;
+}
+
+.center {
+  background: blue;
+  width: 100%;
+}
+
+  .portrait {
   width: 150px;
   border-radius: 100px;
+  }
+
+section.education, section.experience {
+  width: 50%
 }
