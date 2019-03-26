@@ -39,11 +39,17 @@ body {
   width: 100%;
 }
 
-  .portrait {
+.portrait {
   width: 150px;
   border-radius: 100px;
   }
 
-section.education, section.experience {
-  width: 50%
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education, .experience, .skills, .languages, .certification {
+    width: 50%;
+    padding: 20px;
 }
