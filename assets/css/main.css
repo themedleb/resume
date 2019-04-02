@@ -87,7 +87,7 @@ body {
   flex-direction: column;
   height: 887px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .education-container, .experience, .skills, .languages, .certification {
