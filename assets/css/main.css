@@ -13,10 +13,10 @@ html {
 
 body {
   background: #f2f3f7;
-  padding: 20px 0 20px 0;
+  margin: 75px;
   }
 
-  .container {
+.container {
   width: 794px;
   height: 1122px;
   background: white;
@@ -24,56 +24,123 @@ body {
   margin: auto;
   text-align: center;
   border-radius: 20px;
-  padding: 20px;
-  }
+}
 
 .intro {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid #dbe0e7;
+  padding: 20px;
+  background: #23b6db;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: var(--titles);
+}
+
+.intro .left, .intro .center, .intro .right {
+  color: white;
 }
 
 .left {
-  background: red;
   width: 100%;
 }
 
+.age, .email {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.location, .phone {
+  padding-top: 10px;
+}
+
+.age:after, .email:after {
+    content: '';
+    width: 40%;
+    height: 2px;
+    transform: translateY(4px);
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 .right {
-  background: green;
   width: 100%;
 }
 
 .center {
-  background: blue;
   width: 100%;
 }
 
 .portrait {
   width: 150px;
   border-radius: 100px;
-  }
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.education, .experience, .skills, .languages, .certification {
-    width: 50%;
-    padding: 20px;
-    text-align: left;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 887px;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-container, .experience, .skills, .languages, .certification {
+  width: 49%;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: left;
 }
 
 .title {
     font-family: var(--titles);
-    font-weight: 400;
+    font-weight: bolder;
     color: #23b6db;
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.education-item {
+.title:after {
+    content: '';
+    width: 40%;
+    height: 3px;
+    transform: translateY(9px);
+    position: absolute;
+    background: #db237f;
+    bottom: 0;
+    left: 0;
+}
+
+.education-item, .experience-item {
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
+}
+
+.education-container, .experience {
+    padding-right: 14px;
+    padding-left: 28px;
+}
+
+.skills, .languages, .certification {
+    padding-left: 14px;
+    padding-right: 28px;
+}
+
+.language-item, .skill-item {
+  padding-bottom: 10px;
+}
+
+.degree, .establishment, .language-name, .skill-item-title, .name {
+  font-family: var(--titles);
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .school {
@@ -81,5 +148,15 @@ body {
 }
 
 .date {
-    padding-left: 5px;
+}
+
+.school, .date, .language-detail, .period, .certificate-issuer {
+  font-size: 15px;
+  color: #8895ae;
+}
+
+.type {
+    font-weight: 700;
+    font-size: 18px;
+    color: #8895ae;
 }
