@@ -1,16 +1,19 @@
 @font-face {
   font-family: ContentFont;
   src: url('fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: TitlesFontRegular;
   src: url('fonts/Quicksand/Quicksand-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: TitlesFontBold;
   src: url('fonts/Quicksand/Quicksand-Bold.ttf');
+  font-display: swap;
 }
 
 html {
