@@ -9,32 +9,33 @@ html {
 
 *, *:before, *:after {
   box-sizing: border-box;
+  transition: all, .3s;
 }
 
 body {
   background: #f2f3f7;
-  margin: 75px;
-  }
+  margin: 75px 0;
+}
+
+body ::selection {
+    background: rgba(237, 255, 0, 0.5);
+}
 
 .container {
-  width: 794px;
-  height: 1122px;
+  border-radius: 0;
   background: white;
   box-shadow: 0px 0px 150px #d7e0e7;
-  margin: auto;
   text-align: center;
-  border-radius: 20px;
 }
 
 .intro {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #dbe0e7;
   padding: 20px;
   background: #23b6db;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   font-family: var(--titles);
 }
 
@@ -44,11 +45,14 @@ body {
 
 .left {
   width: 100%;
+  order: 2;
+  margin: 40px 0;
+  transition: unset;
 }
 
 .age, .email {
-    position: relative;
-    padding-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 .location, .phone {
@@ -56,24 +60,28 @@ body {
 }
 
 .age:after, .email:after {
-    content: '';
-    width: 40%;
-    height: 2px;
-    transform: translateY(4px);
-    position: absolute;
-    background: rgba(255, 255, 255, 0.15);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  content: '';
+  width: 40%;
+  height: 2px;
+  transform: translateY(4px);
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .right {
   width: 100%;
+  order: 3;
+  transition: unset;
 }
 
 .center {
   width: 100%;
+  order: 1;
+  transition: unset;
 }
 
 .portrait {
@@ -83,18 +91,117 @@ body {
 
 .content {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  height: 887px;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .education, .experience, .skills, .languages, .certification {
-  width: 49%;
   padding-top: 28px;
   padding-bottom: 28px;
+  text-align: center;
+}
+
+.education {
+  margin-top: 20px;
+}
+
+.languages {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: var(--titles);
+  font-weight: bolder;
+  color: #23b6db;
+  width: fit-content;
+  margin-bottom: 30px;
+  position: relative;
+  margin: auto auto 30px auto;
+}
+
+.title:after {
+  content: '';
+  width: 40%;
+  height: 3px;
+  transform: translateY(9px);
+  position: absolute;
+  background: #db237f;
+  bottom: 0;
+  left: 29%;
+}
+
+.education-item, .experience-item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.language-item, .skill-item {
+  padding-bottom: 10px;
+}
+
+.degree, .establishment, .language-name, .skill-item-title, .name {
+  font-family: var(--titles);
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.school {
+  padding-right: 5px;
+}
+
+.school, .date, .language-detail, .period, .certificate-issuer {
+  font-size: 15px;
+  color: #8895ae;
+}
+
+.type {
+  font-weight: 700;
+  font-size: 18px;
+  color: #8895ae;
+}
+
+@media (min-width: 812px) {
+
+.container {
+  width: 794px;
+  height: 1122px;
+  box-shadow: 0px 0px 150px #d7e0e7;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.intro {
+  flex-wrap: unset;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.left {
+  order: unset;
+}
+
+.right {
+  order: unset;
+}
+
+.center {
+  order: unset;
+}
+
+.content {
+  flex-wrap: wrap;
+  height: 894px;
+}
+
+.education, .experience, .skills, .languages, .certification {
+  width: 49%;
   text-align: left;
+}
+
+.education {
+    margin-top: unset;
 }
 
 .title {
@@ -102,7 +209,7 @@ body {
     font-weight: bolder;
     color: #23b6db;
     width: fit-content;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
     position: relative;
 }
 
@@ -137,12 +244,6 @@ body {
   padding-bottom: 10px;
 }
 
-.degree, .establishment, .language-name, .skill-item-title, .name {
-  font-family: var(--titles);
-  font-size: 19px;
-  font-weight: bold;
-}
-
 .school {
     padding-right: 5px;
 }
@@ -156,4 +257,5 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #8895ae;
+}
 }
