@@ -258,3 +258,19 @@ body ::selection {
     color: #8895ae;
 }
 }
+
+.noscript {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #db237f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding: 20px;
+    font-size: 14px;
+}
