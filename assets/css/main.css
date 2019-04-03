@@ -80,6 +80,7 @@ body ::selection {
 
 .center {
   width: 100%;
+  height: 100%;
   order: 1;
   transition: unset;
 }
@@ -87,6 +88,10 @@ body ::selection {
 .portrait {
   width: 150px;
   border-radius: 100px;
+}
+
+.name {
+    padding-top: 20px;
 }
 
 .content {
@@ -174,6 +179,7 @@ body ::selection {
   flex-wrap: unset;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  height: 250px;
 }
 
 .left {
