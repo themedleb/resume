@@ -97,8 +97,7 @@ body ::selection {
 }
 
 .education, .experience, .skills, .languages, .certification {
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding: 28px;
   text-align: center;
 }
 
