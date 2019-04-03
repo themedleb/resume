@@ -1,10 +1,24 @@
 :root {
-  --content: 'Open Sans', sans-serif;
-  --titles: 'Quicksand', sans-serif;
+
+}
+
+@font-face {
+  font-family: ContentFont;
+  src: url('fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: TitlesFontRegular;
+  src: url('fonts/Quicksand/Quicksand-Regular.ttf');
+}
+
+@font-face {
+  font-family: TitlesFontBold;
+  src: url('fonts/Quicksand/Quicksand-Bold.ttf');
 }
 
 html {
-  font-family: var(--content);
+  font-family: ContentFont;
 }
 
 *, *:before, *:after {
@@ -36,10 +50,6 @@ body ::selection {
   border-bottom: 1px solid #dbe0e7;
   padding: 20px;
   background: #23b6db;
-  font-family: var(--titles);
-}
-
-.intro .left, .intro .center, .intro .right {
   color: white;
 }
 
@@ -48,6 +58,10 @@ body ::selection {
   order: 2;
   margin: 40px 0;
   transition: unset;
+}
+
+.left, .right {
+  font-family: TitlesFontRegular;
 }
 
 .age, .email {
@@ -115,7 +129,7 @@ body ::selection {
 }
 
 .title {
-  font-family: var(--titles);
+  font-family: TitlesFontBold;
   font-weight: bolder;
   color: #23b6db;
   width: fit-content;
@@ -146,7 +160,7 @@ body ::selection {
 }
 
 .degree, .establishment, .language-name, .skill-item-title, .name {
-  font-family: var(--titles);
+  font-family: TitlesFontBold;
   font-size: 19px;
   font-weight: bold;
 }
