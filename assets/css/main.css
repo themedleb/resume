@@ -14,7 +14,7 @@ html {
 
 body {
   background: #f2f3f7;
-  margin: 75px 0;
+  margin: 0;
 }
 
 body ::selection {
@@ -167,6 +167,10 @@ body ::selection {
 }
 
 @media (min-width: 812px) {
+
+body {
+  margin: 75px 0;
+}
 
 .container {
   width: 794px;
