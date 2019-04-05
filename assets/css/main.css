@@ -22,7 +22,6 @@ html {
 
 *, *:before, *:after {
   box-sizing: border-box;
-  transition: all, .3s;
 }
 
 body {
