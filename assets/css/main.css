@@ -128,7 +128,6 @@ body ::selection {
 
 .title {
   font-family: TitlesFontBold;
-  font-weight: bolder;
   color: #23b6db;
   width: fit-content;
   width: -moz-fit-content;
@@ -185,7 +184,7 @@ body {
 
 .container {
   width: 794px;
-  height: 1122px;
+  height: 1195px;
   margin: auto;
   border-radius: 20px;
 }
@@ -211,7 +210,7 @@ body {
 
 .content {
   flex-wrap: wrap;
-  height: 894px;
+  height: 970px;
 }
 
 .education, .experience, .skills, .languages, .certification {
