@@ -160,7 +160,6 @@ body ::selection {
 .degree, .establishment, .language-name, .skill-item-title, .name {
   font-family: TitlesFontBold;
   font-size: 19px;
-  font-weight: bold;
 }
 
 .school {
