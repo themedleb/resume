@@ -183,8 +183,8 @@ body {
 }
 
 .container {
-  width: 794px;
-  height: 1195px;
+  width: 884px;
+  height: 1305px;
   margin: auto;
   border-radius: 20px;
 }
@@ -210,7 +210,7 @@ body {
 
 .content {
   flex-wrap: wrap;
-  height: 970px;
+  height: 1075px;
 }
 
 .education, .experience, .skills, .languages, .certification {
